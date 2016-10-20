@@ -1,0 +1,30 @@
+Person
+(
+PersonId int,
+PersonType tinyint,
+FirstName varchar(25), 
+LastName varchar(25),
+CNP varchar(13),
+Gender varchar(1),
+DateOfBirth date,
+HomeAddress varchar(100),
+PhoneNumber varchar(15),
+EmailAddress varchar(40),
+Username varchar(50),
+Password varchar(50)
+)
+
+Doctor 
+(
+DoctorId int
+PersonId,
+Speciality varchar(50)
+)
+
+Patient 
+(
+PatientId int	
+PersonId,
+DoctorId int,
+BloodType varchar(3)
+)
